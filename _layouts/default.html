@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  {% include head.html %}
+
+  {% assign page_id = page.id %}
+  {% assign page_class = page.class %}
+  <body id="{{ page_id }}" class="{{ page_class }}">
+    <!-- =====  LODER  ===== -->
+    {% if page.loader %}
+      <div class="loder"></div>
+    {% endif %}
+
+    <div class="wrapper">
+
+      {{ content }}
+
+      {% include contact.html %}
+      {% include footer.html %}
+    </div>
+  <!-- =====  WRAPPER END  ===== -->
+
+  {% include scripts.html %}
+</body>
+
+</html>

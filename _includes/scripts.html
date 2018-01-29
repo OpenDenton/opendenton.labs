@@ -1,0 +1,63 @@
+
+<!-- =====  SCRIPT START  ===== -->
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="{{ "/assets/js/owl.carousel.min.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "/assets/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "/assets/js/letters-type.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "/assets/js/menu.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "/assets/js/custom.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "/assets/js/particles/particles.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "/assets/js/particles/app.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "/assets/js/circle-progress.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "/assets/js/circle-progress-examples.js" | prepend: site.baseurl }}"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAT3mI0RI16q19Oxv93gSxN0cF0wfxWN6w">
+  </script>
+  <script src="{{ "/assets/js/parallax.js" | prepend: site.baseurl }}"></script>
+  
+  <script type="text/javascript">
+  
+  // Add scrollspy to <body>
+  $('body').scrollspy({ target: '#menu' })
+  $("#menu ul li a[href^='#'], .home-arrow-down a").on('click', function(e) {
+    // prevent default anchor click behavior
+    e.preventDefault();
+    // store hash
+    var hash = this.hash;
+    // animate
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 1500, function() {
+      // when done, add hash to url
+      // (default click behaviour)
+      window.location.hash = hash;
+    });
+  });
+  </script>
+  <!-- =====  SCRIPT END  ===== -->
+
+
+
+<!-- Google Structured Data -->
+<script type='application/ld+json'> 
+{
+  "@context": "http://www.schema.org",
+  "@type": "Organization",
+  "name": "Open Denton",
+  "url": "https://www.opendenton.com",
+  "logo": "https://www.opendenton.com/assets/images/footer-logo@2x.png",
+  "description": "We are an open data community initiative in the City of Denton, Texas supporting open government and transparency tools through open data.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "608 E. Hickory",
+    "addressLocality": "Denton",
+    "addressRegion": "Texas",
+    "postalCode": "76205",
+    "addressCountry": "USA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "33.214262",
+    "longitude": "-97.124949"
+  }
+}
+ </script>
