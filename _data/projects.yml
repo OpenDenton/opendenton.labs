@@ -1,0 +1,17 @@
+- name: Mobile parking app
+  desc: Develop a pilot parking solution for Denton Downtown area.
+  active: true
+  icon: map-marker-alt
+- name: Smart lights
+  desc: Smart lights containing sensors to support public safety and environmental reporting.
+  active: true
+  icon: lightbulb
+- name: Autonomous vehicles
+  desc: Acquire an autonomous vehicle for testing various purposes around town.
+  icon: car
+- name: Public IoT devices
+  desc: Assess the usability for public safety Internet of Things (IoT) devices around town.
+  icon: globe
+- name: Behavioral economics
+  desc: Assess behavioral economy for smart-city minor improvements
+  icon: money-bill-alt

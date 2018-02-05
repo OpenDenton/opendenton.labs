@@ -1,44 +1,40 @@
 <!-- =====  FOOTER START  ===== -->
 <div class="footer bg-dark ptb_100">
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12">
-				<div class="footer-link">
-					<ul>
-						<li> <a href="#">Home</a></li>
-						<li> <a href="#">Service</a></li>
-						<li> <a href="#">Work</a></li>
-						<li> <a href="#">About</a></li>
-						<li> <a href="#">Team</a></li>
-						<li> <a href="#">Blogs</a></li>
-						<li> <a href="#">Contact</a></li>
-					</ul>
-				</div>
-				<div class="copyright-part mtb_10">
-					@ 2017 All Rights Reserved TechMill, Inc <br>
-					Open Denton is an initiative of <a href="https://techmill.co">TechMill</a>, a 501(c)c3 nonprofit.
-				</div>
-				<div class="social_icon">
-					<ul>
-						{% if site.facebook_username %}
-						<li><a href="https://facebook.com/{{ site.facebook_username }}" target="_blank">
-							<i class="fa fa-facebook"></i>
-						</a></li>
-						{% endif %}
-						{% if site.twitter_username %}
-						<li><a href="https://twitter.com/{{ site.twitter_username }}">
-							<i class="fa fa-twitter"></i>
-						</a></li>
-						{% endif %}
-						{% if site.github_username %}
-						<li><a href="https://github.com/{{ site.github_username }}" target="_blank">
-							<i class="fa fa-github"></i>
-						</a></li>
-						{% endif %}
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="footer-link">
+                    <ul>
+                        {% for link in sites.data.navigation %}
+                          <li> <a href="#{{ link.href }}">{{ link.name }}</a></li>
+                        {% endfor %}
+                      </ul>
+                </div>
+                <div class="copyright-part mtb_10">
+                    @ 2017 All Rights Reserved TechMill, Inc <br>
+                    Open Denton is an initiative of <a href="https://techmill.co">TechMill</a>, a 501(c)c3 nonprofit.
+                </div>
+                <div class="social_icon">
+                    <ul>
+                        {% if site.facebook_username %}
+                        <li><a href="https://facebook.com/{{ site.facebook_username }}" target="_blank">
+                            <i class="fa fa-facebook"></i>
+                        </a></li>
+                        {% endif %}
+                        {% if site.twitter_username %}
+                        <li><a href="https://twitter.com/{{ site.twitter_username }}">
+                            <i class="fa fa-twitter"></i>
+                        </a></li>
+                        {% endif %}
+                        {% if site.github_username %}
+                        <li><a href="https://github.com/{{ site.github_username }}" target="_blank">
+                            <i class="fa fa-github"></i>
+                        </a></li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
     <!-- =====  FOOTER END  ===== -->

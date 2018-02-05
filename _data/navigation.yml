@@ -1,0 +1,18 @@
+- href: home2
+  name: Home
+  class: active
+- href: about
+  name: About
+  class: 
+- href: service
+  name: Service
+  class: 
+- href: prices
+  name: Prices
+  class: 
+- href: team
+  name: Team
+  class:
+- href: contact
+  name: Contact
+  class: 
