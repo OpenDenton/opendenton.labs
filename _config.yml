@@ -26,11 +26,19 @@ twitter_username: opendenton
 github_username:  opendenton
 facebook_username: opendenton
 
+jekyll_admin:
+  default_fields:
+    - title
+    - description
+    - image
+    - tags
+
 # Build settings
 markdown: kramdown
-gems:
+plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-admin
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
