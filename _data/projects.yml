@@ -1,4 +1,4 @@
-- name: Mobile parking app
+- name: Downtown Parking solutions
   desc: Develop a pilot parking solution for Denton Downtown area.
   active: true
   icon: map-marker-alt
@@ -12,6 +12,9 @@
 - name: Public IoT devices
   desc: Assess the usability for public safety Internet of Things (IoT) devices around town.
   icon: globe
-- name: Behavioral economics
-  desc: Assess behavioral economy for smart-city minor improvements
+- name: SMART incentives
+  desc: Develop and pilot incentives for smart-city minor improvements
   icon: money-bill-alt
+- name: Weather Monitoring
+  desc: Develop and pilot environment sensors to provide better data and help make data driven environmental decision
+  icon: globe

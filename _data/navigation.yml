@@ -3,16 +3,13 @@
   class: active
 - href: about
   name: About
-  class: 
+  class:
 - href: service
-  name: Service
-  class: 
-- href: prices
-  name: Prices
-  class: 
+  name: Projects
+  class:
 - href: team
   name: Team
   class:
 - href: contact
   name: Contact
-  class: 
+  class:
