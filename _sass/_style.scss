@@ -1524,7 +1524,7 @@ thead {
 
 /* =====  Aboutus css  ===== */
 .about{
-	background:url('../images/bg01.jpg');
+	background:url('../images/bgsc.jpg');
 	background-position: center center;
     background-repeat: no-repeat;
     transition: background 0.3s,border 0.3s,border-radius 0.3s,box-shadow 0.3s;
@@ -1536,6 +1536,11 @@ thead {
 }
 .about-heading span {
 	font-weight: 300;
+}
+.about-text {
+	background: rgba(255,255,255,0.85);
+    padding: 10px;
+    color: black;
 }
 /* =====  End Aboutus css  ===== */
 
