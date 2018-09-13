@@ -5,187 +5,197 @@ class: home2
 ---
 
 <!-- =====  HEADER START  ===== -->
-    <header id="header">
-      <div class="header navbar">
+<header id="header">
+    <div class="header navbar">
         <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <!-- <div class="navbar-header pull-left"> <a class="navbar-brand" href="index.html"> <img alt="Open Denton Labs" src="assets/images/logo2.png"> </a> </div> -->
-          <!-- Collection of nav links, forms, and other content for toggling -->
-          <div id="navbarCollapse" class="navbar-collapse navbar-right">
-            <nav id="menu" class='collapse'>
-              <!-- Navigation Menu -->
-              <ul class="nav">
-                {% for link in site.data.navigation %}
-                  <li class="{{ link.class }}"> <a href="#{{ link.href }}">{{ link.name }}</a></li>
-                {% endfor %}
-              </ul>
-              <!--End Navigation Menu -->
-            </nav>
-          </div>
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <!-- <div class="navbar-header pull-left"> <a class="navbar-brand" href="index.html"> <img alt="Open Denton Labs" src="assets/images/logo2.png"> </a> </div> -->
+            <!-- Collection of nav links, forms, and other content for toggling -->
+            <div id="navbarCollapse" class="navbar-collapse navbar-right">
+                <nav id="menu" class='collapse'>
+                    <!-- Navigation Menu -->
+                    <ul class="nav">
+                        {% for link in site.data.navigation %}
+                        <li class="{{ link.class }}"><a href="#{{ link.href }}">{{ link.name }}</a></li>
+                        {% endfor %}
+                    </ul>
+                    <!--End Navigation Menu -->
+                </nav>
+            </div>
         </div>
-      </div>
-    </header>
-    <!-- =====  HEADER END  ===== -->
-    <!-- =====  BANNER STRAT  ===== -->
-    <!-- <div class="banner">
-      <div id="particles-js"></div>
-      <div class="banner-detail ">
-        <div class="cd-intro">
-          <h1 class="cd-headline letters type">
-            <span class="cd-words-wrapper waiting">
-              <b class="is-visible">Choose Progress</b>
-              <b>Become Successful!</b>
-            </span>
-           </h1>
-          <p class="mt_20 light">A wonderful serenity has taken possession of my entire soul, like these sweet
-            <br> mo alone, and feel the charm of existence in this spot.</p>
-          <button class="custom-btn custom-btns light" type="button"><span>Learn More</span></button>
-          <div class="home-arrow-down"> <a href="#about" class="btn"><i class="fa fa-long-arrow-down"></i></a> </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- =====  BANNER END  ===== -->
-    <!-- =====  ABOUT START  ===== -->
-    <section>
-      <div id="about" class="about ptb_100">
+    </div>
+</header>
+<!-- =====  HEADER END  ===== -->
+<!-- =====  BANNER STRAT  ===== -->
+<!-- <div class="banner">
+  <div id="particles-js"></div>
+  <div class="banner-detail ">
+    <div class="cd-intro">
+      <h1 class="cd-headline letters type">
+        <span class="cd-words-wrapper waiting">
+          <b class="is-visible">Choose Progress</b>
+          <b>Become Successful!</b>
+        </span>
+       </h1>
+      <p class="mt_20 light">A wonderful serenity has taken possession of my entire soul, like these sweet
+        <br> mo alone, and feel the charm of existence in this spot.</p>
+      <button class="custom-btn custom-btns light" type="button"><span>Learn More</span></button>
+      <div class="home-arrow-down"> <a href="#about" class="btn"><i class="fa fa-long-arrow-down"></i></a> </div>
+    </div>
+  </div>
+</div> -->
+<!-- =====  BANNER END  ===== -->
+<!-- =====  ABOUT START  ===== -->
+<section>
+    <div id="about" class="about ptb_100">
         <div class="container">
-          <div class="about-inner ">
-            <div class="row">
-              <div class="col-md-5"></div>
-              <div class="col-md-7">
-                <div class="about-text ml_60">
-                  <div class="heading-part ">
-                    <h2 class="main_title about-heading mb_40 pb_20">Imagine The Future of Denton</h2>
-                  </div>
-                  <h4 class="mb_20">A smart city less about apps and more about creating efficient solutions to citizen needs.</h4>
-                  <p>As technology innovations drives forward, it becomes more and more part of our everyday lives. From simple smart phone apps to pay our electric bills, to autonomous cars driving us to the airport. Infrastructure, mobility, healthcare, and public safety are all industries being disrupted by technology - but how can we utilize new technologies to solve problems in our very own city. By working together to highlight challenges for citizens and the city, we're able to experiment and propose the technologies that work for Denton. By learning from the project outcomes of other smart city initiatives, we're able to provide benefits and minimize risks for the citizens of Denton.</p>
-                  <!-- <button class="custom-btn custom-btns mtb_20" type="button"><span>View More Info</span></button> -->
+            <div class="about-inner ">
+                <div class="row">
+                    <div class="col-md-5"></div>
+                    <div class="col-md-7">
+                        <div class="about-text ml_60">
+                            <div class="heading-part ">
+                                <h2 class="main_title about-heading mb_40 pb_20">Imagine The Future of Denton</h2>
+                            </div>
+                            <h4 class="mb_20">A smart city less about apps and more about creating efficient solutions
+                                to citizen needs.</h4>
+                            <p>As technology innovations drives forward, it becomes more and more part of our everyday
+                                lives. From simple smart phone apps to pay our electric bills, to autonomous cars
+                                driving us to the airport. Infrastructure, mobility, healthcare, and public safety are
+                                all industries being disrupted by technology - but how can we utilize new technologies
+                                to solve problems in our very own city. By working together to highlight challenges for
+                                citizens and the city, we're able to experiment and propose the technologies that work
+                                for Denton. By learning from the project outcomes of other smart city initiatives, we're
+                                able to provide benefits and minimize risks for the citizens of Denton.</p>
+                            <!-- <button class="custom-btn custom-btns mtb_20" type="button"><span>View More Info</span></button> -->
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
-    <!-- =====  ABOUT END  ===== -->
-    <!-- =====  WORK WITH US START  ===== -->
-    <section class="text-center parallax" data-source-url="/assets/images/sc1.png"> <!-- Use to be Parallax01.jpg -->
-      <div class="container">
+    </div>
+</section>
+<!-- =====  ABOUT END  ===== -->
+<!-- =====  WORK WITH US START  ===== -->
+<section class="text-center bg-dark">
+    <div class="container">
         <div class="row">
-          <div class="col-md-8 col-md-offset-2 col-sm-12 ptb_100">
-            <div class="story_detail">
-              <h2 class="main_title light mb_20">What is Open Denton <span class="red">Labs?</span> </h2>
-              <h4 class="mtb_20 light"> <a class="light"> Public Private collaboration to design and pilot smart city initiatives and innovation for City of Denton future</a></h4>
-              <!-- <p> Public Private collaboration to design and pilot smart city initiatives and innovation for City of Denton future </p> -->
+            <div class="col-md-8 col-md-offset-2 col-sm-12 ptb_100">
+                <div class="story_detail">
+                    <h2 class="main_title light mb_20">What is Open Denton <span class="red">Labs?</span></h2>
+                    <h4 class="mtb_20 light"><a class="light">Public Private collaboration to design and pilot smart
+                        city initiatives and innovation for City of Denton future</a></h4>
+                </div>
+                <button class="custom-btn custom-btns light mt_20" type="button"><span>JOIN US NOW</span></button>
             </div>
-            <!-- <button class="custom-btn custom-btns light mt_20" type="button"><span>JOIN US NOW</span></button> -->
-            <a href="#contact" class="custom-btn custom-btns light mt_20" type="button"><span>JOIN US NOW</span></a>
-
-          </div>
         </div>
-      </div>
-    </section>
-    <!-- =====  WORK WITH US END  ===== -->
-    <!-- =====  SERVICES STRAT  ===== -->
-    <section id="service" class="pt_100 pb_50">
-      <div class="container text-center">
+    </div>
+</section>
+<!-- =====  WORK WITH US END  ===== -->
+<!-- =====  SERVICES START  ===== -->
+<section id="service" class="pt_100 pb_50">
+    <div class="container text-center">
         <div class="row">
-          <div class="col-md-12">
-            <div class="heading-part ">
-              <h2 class="main_title mb_20">What's possible?</h2>
-              <p class="mb_50">Below you'll find a list of current or potential projects that are possible with this smart city initiative. What's your idea?</p>
+            <div class="col-md-12">
+                <div class="heading-part ">
+                    <h2 class="main_title mb_20">What's possible?</h2>
+                    <p class="mb_50">Below you'll find a list of current or potential projects that are possible with
+                        this smart city initiative. What's your idea?</p>
+                </div>
             </div>
-          </div>
         </div>
         <!-- Services  -->
         <div class="row">
-          {% for project in site.data.projects %}
+            {% for project in site.data.projects %}
             {% if project.active == true %}
-              {% assign class = "active" %}
+            {% assign class = "active" %}
             {% endif %}
-          <div class="col-md-4 col-xs-6 mb_50">
-            <div class="service {{ class }}">
-              <div class="icon-top"><i class="fa fa-{{ project.icon }}"></i></div>
-              <h4 class="mtb_20">{{ project.name }}</h4>
-              <p>{{ project.desc }}</p>
+            <div class="col-md-4 col-xs-6 mb_50">
+                <div class="service {{ class }}">
+                    <div class="icon-top"><i class="fa fa-{{ project.icon }}"></i></div>
+                    <h4 class="mtb_20">{{ project.name }}</h4>
+                    <p>{{ project.desc }}</p>
+                </div>
             </div>
-          </div>
-          {% endfor %}
+            {% endfor %}
         </div>
         <!-- Services -->
-      </div>
-    </section>
-    <!-- =====  SERVICES END  ===== -->
+    </div>
+</section>
+<!-- =====  SERVICES END  ===== -->
 
 
-    <!-- =====  TEAM START  ===== -->
-    <section id="team" class="text-center ptb_100">
-      <div class="container">
+<!-- =====  TEAM START  ===== -->
+<section id="team" class="text-center ptb_100">
+    <div class="container">
         <div class="row">
-          <div class="col-md-6 col-md-offset-3">
-            <div class="heading-part ">
-              <h2 class="main_title mb_20">Our Advisory Team</h2>
-              <!-- <p class="mb_50">The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p> -->
+            <div class="col-md-6 col-md-offset-3">
+                <div class="heading-part ">
+                    <h2 class="main_title mb_20">Our Advisory Team</h2>
+                    <!-- <p class="mb_50">The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p> -->
+                </div>
             </div>
-          </div>
         </div>
         <div class="row">
-          <!--Team Carousel -->
-          <div class="team_grid">
-            <div class="team3col row">
-              {% for advisor in site.data.advisors %}
-                <div class="item team-detail col-md-4">
-                <div class="team-item-img">
-                  <img src="{{ advisor.image | prepend: "/assets/images/advisors/" | prepend: site.baseurl }}">
+            <!--Team Carousel -->
+            <div class="team_grid">
+                <div class="team3col row">
+                    {% for advisor in site.data.advisors %}
+                    <div class="item team-detail col-md-4">
+                        <div class="team-item-img">
+                            <img src="{{ advisor.image | prepend: "/assets/images/advisors/" | prepend: site.baseurl
+                            }}">
+                        </div>
+                        <div class="team-designation mt_20">{{ advisor.title }}</div>
+                        <h3 class="team-title  mt_10 mb_20">{{ advisor.name }}</h3>
+                        <!-- <p>Lorem ipsum dolor sit amet, sea in odio erat, volumu Clita prodesset Rem ipsum dolor s..</p> -->
+                        <ul class="social mt_20">
+                            {% if advisor.social.facebook %}
+                            <li><a href="https://facebook.com/{{ advisor.social.facebook }}" target="_blank">
+                                <i class="fa fa-facebook"></i>
+                            </a></li>
+                            {% endif %}
+                            {% if advisor.social.twitter %}
+                            <li><a href="https://twitter.com/{{ advisor.social.twitter }}">
+                                <i class="fa fa-twitter"></i>
+                            </a></li>
+                            {% endif %}
+                            {% if advisor.social.linkedin %}
+                            <li><a href="https://www.linkedin.com/in/{{ advisor.social.linkedin }}" target="_blank">
+                                <i class="fa fa-linkedin"></i>
+                            </a></li>
+                            {% endif %}
+                            {% if advisor.social.github %}
+                            <li><a href="https://github.com/{{ advisor.social.github }}" target="_blank">
+                                <i class="fa fa-github"></i>
+                            </a></li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                    {% endfor %}
                 </div>
-                <div class="team-designation mt_20">{{ advisor.title }}</div>
-                <h3 class="team-title  mt_10 mb_20">{{ advisor.name }}</h3>
-                <!-- <p>Lorem ipsum dolor sit amet, sea in odio erat, volumu Clita prodesset Rem ipsum dolor s..</p> -->
-                <ul class="social mt_20">
-                  {% if advisor.social.facebook %}
-                  <li><a href="https://facebook.com/{{ advisor.social.facebook }}" target="_blank">
-                    <i class="fa fa-facebook"></i>
-                  </a></li>
-                  {% endif %}
-                  {% if advisor.social.twitter %}
-                  <li><a href="https://twitter.com/{{ advisor.social.twitter }}">
-                    <i class="fa fa-twitter"></i>
-                  </a></li>
-                  {% endif %}
-                  {% if advisor.social.linkedin %}
-                  <li><a href="https://www.linkedin.com/in/{{ advisor.social.linkedin }}" target="_blank">
-                    <i class="fa fa-linkedin"></i>
-                  </a></li>
-                  {% endif %}
-                  {% if advisor.social.github %}
-                  <li><a href="https://github.com/{{ advisor.social.github }}" target="_blank">
-                    <i class="fa fa-github"></i>
-                  </a></li>
-                  {% endif %}
-                </ul>
-              </div>
-              {% endfor %}
             </div>
-          </div>
         </div>
         <!--End Team Carousel -->
-      </div>
-    </section>
-    <!-- =====  TEAM END  ===== -->
+    </div>
+</section>
+<!-- =====  TEAM END  ===== -->
 
 
-    <!-- =====  WORK WITH US STRAT  ===== -->
-    <section class="text-center bg-dark">
-      <div class="container">
+<!-- =====  WORK WITH US STRAT  ===== -->
+<section class="text-center bg-dark">
+    <div class="container">
         <div class="row">
-          <div class="col-md-8 col-md-offset-2 col-sm-12 ptb_100">
-            <div class="story_detail">
-              <h2 class="main_title light mb_20">How can I help<span class="red">?</span> </h2>
-              <h4 class="mtb_20 light"> <a class="light">If you have an innovative idea you'd like to see implemented in Denton, use the contact form below and let us know. Feel free to suggest a smart city service/or any improvement you like.</a></h4>
+            <div class="col-md-8 col-md-offset-2 col-sm-12 ptb_100">
+                <div class="story_detail">
+                    <h2 class="main_title light mb_20">How can I help<span class="red">?</span></h2>
+                    <h4 class="mtb_20 light"><a class="light">If you have an innovative idea you'd like to see
+                        implemented in Denton, use the contact form below and let us know. Feel free to suggest a smart
+                        city service/or any improvement you like.</a></h4>
+                </div>
+                <a href="#contact" class="custom-btn custom-btns light mt_20" type="button"><span>JOIN US NOW</span></a>
             </div>
-            <a href="#contact" class="custom-btn custom-btns light mt_20" type="button"><span>JOIN US NOW</span></a>
-          </div>
         </div>
-      </div>
-    </section>
-    <!-- =====  WORK WITH US END  ===== -->
+    </div>
+</section>
+<!-- =====  WORK WITH US END  ===== -->
